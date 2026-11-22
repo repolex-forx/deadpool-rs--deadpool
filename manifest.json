@@ -627,7 +627,9 @@
           "source": "lsp",
           "install_path": "/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-1.0.69/src/lib.rs"
         }
-      ]
+      ],
+      "repolex": "aggregate/repolex/89f6ae48ae7e80dff697900868789120e01785d3/chunk-001.nq.gz",
+      "dep": "dep/89f6ae48ae7e80dff697900868789120e01785d3.nq.gz"
     }
   ],
   "commit": "commit/commit.nq.gz",
