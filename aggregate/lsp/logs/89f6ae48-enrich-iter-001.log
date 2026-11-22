@@ -1,0 +1,24 @@
+[2026-11-22T17:42:40Z] === ENRICH ITERATION 1 START | repo=deadpool-rs/deadpool sha=89f6ae48 ===
+[2026-11-22T17:42:40Z] [iter=1] PHASE START: enrich repo=deadpool-rs/deadpool sha=89f6ae48 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/89f6ae48-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/89f6ae48ae7e80dff697900868789120e01785d3.nq.gz
+[2026-11-22T17:42:50Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-22T17:42:52Z] [iter=1] AST store loaded triples=284695 load_secs=2 mem_mb=468 MB
+[2026-11-22T17:42:52Z] [iter=1] Step 2: Finding LSP targets mem_mb=468 MB
+[2026-11-22T17:42:53Z] [iter=1] LSP targets found call_sites=2330 imports=87 extends=0 implements=212 secs=1
+[2026-11-22T17:42:53Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=468 MB
+[2026-11-22T17:42:55Z] [iter=1] Position index built positions=19212 nodes_with_types=23137 secs=2 mem_mb=468 MB
+[2026-11-22T17:42:55Z] [iter=1] Step 3: Starting LSP resolution mem_mb=468 MB already_completed_types=[] already_completed_files=0
+[2026-11-22T17:42:55Z] [iter=1] Resolving target type target_type=call_site count=2330
+[2026-11-22T17:43:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.8 files_done=0 resolved=0 errors=0 current=tests/unmanaged.rs
+[2026-11-22T17:44:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.6 files_done=1 resolved=93 errors=0 current=postgres/tests/postgres.rs
+[2026-11-22T17:44:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.2 files_done=8 resolved=815 errors=0 current=tests/managed_unreliable_manager.rs
+[2026-11-22T17:45:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.7 files_done=33 resolved=1626 errors=0 current=src/managed/dropguard.rs
+[2026-11-22T17:45:37Z] [iter=1] Target type resolved target_type=call_site resolved=1804 errors=0 secs=162 mem_mb=468 MB
+[2026-11-22T17:45:37Z] [iter=1] Resolving target type target_type=import_statement count=87
+[2026-11-22T17:45:52Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=3.2 files_done=2 resolved=2 errors=0 current=tests/managed.rs
+[2026-11-22T17:46:06Z] [iter=1] Target type resolved target_type=import_statement resolved=81 errors=0 secs=28 mem_mb=468 MB
+[2026-11-22T17:46:06Z] [iter=1] Resolving target type target_type=implements_clause count=212
+[2026-11-22T17:46:27Z] [iter=1] HEARTBEAT target_type=implements_clause elapsed_min=3.8 files_done=1 resolved=1 errors=0 current=src/managed/mod.rs
+[2026-11-22T17:46:29Z] [iter=1] Target type resolved target_type=implements_clause resolved=211 errors=0 secs=24 mem_mb=468 MB
+[2026-11-22T17:57:25Z] [iter=1] Step 5: Writing final enrichment file triples=26447
+[2026-11-22T17:57:26Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/89f6ae48ae7e80dff697900868789120e01785d3.nq.gz size_kb=525
+[2026-11-22T17:57:26Z] [iter=1] PHASE END: enrich elapsed_s=886 elapsed_min=14.8 total_triples=26447
