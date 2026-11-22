@@ -1,0 +1,11 @@
+{
+  "org": "deadpool-rs",
+  "repo": "deadpool",
+  "versions": [
+    {
+      "commit": "89f6ae48ae7e80dff697900868789120e01785d3",
+      "tag": "deadpool-v0.12.1",
+      "parsed_at": "2026-11-22T17:59:50.768139+00:00"
+    }
+  ]
+}
