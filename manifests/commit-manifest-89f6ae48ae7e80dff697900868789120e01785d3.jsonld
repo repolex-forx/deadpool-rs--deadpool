@@ -42,9 +42,15 @@
       "repolex:graphType": "pr",
       "repolex:graphFilePath": "pr/pr.nq.gz",
       "repolex:graphFileSize": 94127
+    },
+    {
+      "@type": "repolex:GraphFile",
+      "repolex:graphType": "ast",
+      "repolex:graphFilePath": "aggregate/ast/89f6ae48ae7e80dff697900868789120e01785d3/chunk-001.nq.gz",
+      "repolex:graphFileSize": 4017149
     }
   ],
-  "repolex:parseStatus": "metadata_complete",
+  "repolex:parseStatus": "ast_complete",
   "repolex:parsedAt": "2026-11-22T17:39:12.306944+00:00",
   "repolex:parserVersion": "0.1.10",
   "git:tagName": "deadpool-v0.12.1"
